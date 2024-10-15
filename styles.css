@@ -1,48 +1,39 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-.container {
-    width: 250px;
-    height: 300px;
-    background-color: rgba(207, 211, 211, 0.692);
-    border-color: black;
-    margin: 30px auto;
-    border-radius: 15px;
-    padding-top: 10px;  
-   
-
-}
-
-.calcdisplay {
-    box-sizing: border-box;
-    width: 230px;
-    height: 50px;
-    border-radius: 10px;
-    background-color: rgb(237, 241, 241);
-    margin: 0 auto;
-}
-
-.buttonCont {
-  width: 56px;
-  height: 42px;
-
-  
-}
-
-.buttonsContainer {
+#calc {
   display: flex;
-  flex-wrap: wrap;
-  width: 230px;
-  height: 150px;
-  margin: 0 auto;
-  margin-top: 15px;
+  min-height: 95vh;
   justify-content: center;
-  
+  align-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  background-color: azure;
 }
-
-#zeroBtn {
-  width: 111px;
+#container {
+  background-color: black;
+  border: 10px solid rgba(47,47,47,1);
+  border-radius: 4px;
+  display: grid;
+  grid-template-columns: repeat(4, 100px);
+  grid-template-rows: minmax(100px, auto) repeat(5, 80px);
+  gap: 2px;
+}
+#zero {
+  grid-column: span 2;
+}
+button {
+  font-size: 20px;
+  font-weight: 800;
+}
+#display {
+  grid-column: 1 / -1;
+  background-color: #b2b9b7;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-end;
+  padding: 5px;
+  font-size: 5.5em;
+  font-weight: initial;
+  text-shadow: 1.3px 1.3px #383838;
+  margin: 5px;
 }

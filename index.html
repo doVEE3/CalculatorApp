@@ -1,42 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link href="styles.css" rel="stylesheet" type="text/css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA Compatible" content="ie=edge">
-    <title> Calculator </title>
-    <link rel="stylesheet" href="styles.css">
+    <title>CALCULATOR</title>
 </head>
 <body>
-
-<div class="container"> 
- <div class="calcdisplay">   </div>
- <div class="buttonsContainer"> 
-  <button class="buttonCont" id="equalBtn"> AC </button>
-  <button class="buttonCont" id="DotBtn"> C </button>
-  <button class="buttonCont" id="%Btn"> % </button>
-  <button class="buttonCont" id="+Btn"> / </button>
-  <button class="buttonCont" id="3Btn"> 7 </button>
-  <button class="buttonCont" id="2Btn"> 8 </button>
-  <button class="buttonCont" id="1Btn"> 9 </button>
-  <button class="buttonCont" id="-Btn"> * </button>
-  <button class="buttonCont" id="6Btn"> 4 </button>
-  <button class="buttonCont" id="5Btn"> 5 </button>
-  <button class="buttonCont" id="4Btn"> 6 </button>
-  <button class="buttonCont" id="*Btn"> - </button>
-  <button class="buttonCont" id="9Btn"> 1 </button>
-  <button class="buttonCont" id="8Btn"> 2 </button>
-  <button class="buttonCont" id="7Btn"> 3 </button>
-  <button class="buttonCont" id="/Btn"> + </button>
-  <button class="buttonCont" id="zeroBtn"> 0 </button>
-  <button class="buttonCont" id="CButton"> . </button>
-  <button class="buttonCont" id="ACButton"> = </button>
-
-
- </div>
-</div>
-
-<script src="script.js" ></script>
-
+    
+    <main id="calc">
+    <div id="container">
+        <div id="display"></div>
+        <button type="button" class="clear" value="clear" data-key="8">AC</button>
+        <button type="button" class="sign" value="sign" data-key="192">+/-</button>
+        <button type="button" class="percent" value="percent" data-key="80">%</button>
+        <button type="button" class="operator" value="/" data-key="68">/</button>
+        <button type="button" class="operand" value="7" data-key="55">7</button>
+        <button type="button" class="operand" value="8" data-key="55">8</button>
+        <button type="button" class="operand" value="9" data-key="55">9</button>
+        <button type="button" class="operator" value="*" data-key="88">*</button>
+        <button type="button" class="operand" value="4" data-key="52">4</button>
+        <button type="button" class="operand" value="5" data-key="52">5</button>
+        <button type="button" class="operand" value="6" data-key="52">6</button>
+        <button type="button" class="operator" value="-" data-key="173">-</button>
+        <button type="button" class="operand" value="1" data-key="49">1</button>
+        <button type="button" class="operand" value="2" data-key="49">2</button>
+        <button type="button" class="operand" value="3" data-key="49">3</button>
+        <button type="button" class="operator" value="+" data-key="61">+</button>
+        <button type="button" id="zero" class="operand" value="0" data-key="48">0</button>
+        <button type="button" class="decimal" value="." data-key="190">.</button>
+        <button type="button" class="equals" value="=" data-key="69">=</button>
+    </div>
+    </main>
 </body>
+<script src="script.js"></script>
 </html>
